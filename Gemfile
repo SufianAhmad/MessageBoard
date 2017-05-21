@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails', '4.2.6'
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3', '>= 1.3.13'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form', '~> 3.4'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
@@ -16,8 +16,8 @@ group :development, :test do
   gem 'byebug'
 end
 
-group :development, :test do
-  gem 'sqlite3'
+group :production do
+  gem 'pg'
 end
 
 group :development do
